@@ -75,3 +75,10 @@
     font-family: 'Roboto', sans-serif;
     color: var(--gray-text);
 }
+
+
+
+
+.block__adress-input {
+    border: 1px solid #000;
+}

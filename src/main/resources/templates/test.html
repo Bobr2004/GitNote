@@ -8,7 +8,25 @@
     <link rel="stylesheet" href="../static/css/base.css">
     <link rel="stylesheet" href="../static/css/header.css">
     <link rel="stylesheet" href="../static/css/test.css">
-    <title>GitNote</title>
+    <link
+            rel="shortcut icon"
+            media="(prefers-color-scheme: no-preference)"
+            href="../static/images/favicon-light.svg"
+            type="image/x-icon">
+
+    <link
+            rel="shortcut icon"
+            media="(prefers-color-scheme: light)"
+            href="../static/images/favicon-light.svg"
+            type="image/x-icon">
+
+
+    <link
+            rel="shortcut icon"
+            media="(prefers-color-scheme: dark)"
+            href="../static/images/favicon-dark.svg"
+            type="image/x-icon">
+    <title>GitNote | Test</title>
 </head>
 <body>
 <h1 th:text="${message}"></h1>
@@ -36,7 +54,7 @@
 
             <div class="test__block">
                 <label class="test__command-block">
-                    <span th:text="${test0}" class="test__command-question"></span>
+                    <span th:text="${test0}" class="test__command-question">question1</span>
                     <textarea name="text1" th:value="${text1}" class="test__command-input" oninput="changeHeight(this)"
                               placeholder="enter git command"></textarea>
                     <!--                    Я ПРИБРАВ ПАРАМЕТР NAME ІБО ЙДИ НАХУЙ ВІН МЕНІ БІЛЬШЕ ЧИМ ТОБІ ПОТРІБЕН ХD -->
@@ -45,21 +63,21 @@
 
             <div class="test__block">
                 <label class="test__command-block">
-                    <span th:text="${test1}" class="test__command-question">configurate user's name</span>
+                    <span th:text="${test1}" class="test__command-question">question2</span>
                     <textarea name="text2" th:value="${text2}" class="test__command-input" oninput="changeHeight(this)"
                               placeholder="enter git command"></textarea>
                 </label>
             </div>
             <div class="test__block">
                 <label class="test__command-block">
-                    <span th:text="${test2}" class="test__command-question">commit all changes</span>
+                    <span th:text="${test2}" class="test__command-question">question3</span>
                     <textarea name="text3" th:value="${text3}" class="test__command-input" oninput="changeHeight(this)"
                               placeholder="enter git command"></textarea>
                 </label>
             </div>
             <div class="test__block">
                 <label class="test__command-block">
-                    <span th:text="${test3}" class="test__command-question">reset to previous commit</span>
+                    <span th:text="${test3}" class="test__command-question">question4</span>
                     <textarea name="text4" th:value="${text4}" class="test__command-input" oninput="changeHeight(this)"
                               placeholder="enter git command"></textarea>
                 </label>

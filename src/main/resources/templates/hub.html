@@ -8,7 +8,25 @@
     <link rel="stylesheet" href="../static/css/base.css">
     <link rel="stylesheet" href="../static/css/header.css">
     <link rel="stylesheet" href="../static/css/block.css">
-    <title>GitNote</title>
+    <link
+            rel="shortcut icon"
+            media="(prefers-color-scheme: no-preference)"
+            href="../static/images/favicon-light.svg"
+            type="image/x-icon">
+
+    <link
+            rel="shortcut icon"
+            media="(prefers-color-scheme: light)"
+            href="../static/images/favicon-light.svg"
+            type="image/x-icon">
+
+
+    <link
+            rel="shortcut icon"
+            media="(prefers-color-scheme: dark)"
+            href="../static/images/favicon-dark.svg"
+            type="image/x-icon">
+    <title>GitNote | GitHub</title>
 </head>
 <body>
 <div class="wrapper">
@@ -32,7 +50,33 @@
     <main class="main">
         <div class="container">
             <section th:each="theme : ${themes}" class="block">
-                <h2 th:text="${theme.getKey()}" class="block__title"></h2>
+                <h2 th:text="${theme.getKey()}" class="block__title">Title</h2>
+                <!--                test-->
+<!--                <div th:each="command : ${theme.getValue()}" class="block__code">-->
+<!--                    <div class="block__code-text">-->
+<!--                        <p class="block__code-command" th:text="${command.getName()}">git remote add</p>-->
+<!--                        <p class="block__code-explaining" th:text="${command.getExplanation()}">Manage connections to remote repositories.</p>-->
+<!--                    </div>-->
+<!--                    <div class="block__code-button">-->
+<!--                        <button class="block__code-copy">-->
+<!--                            <span class="block__code-copy-img"></span>-->
+<!--                        </button>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div th:each="command : ${theme.getValue()}" class="block__code">-->
+<!--                    <div class="block__code-text">-->
+<!--                        <p class="block__code-command" th:text="${command.getName()}">git fork</p>-->
+<!--                        <p class="block__code-explaining" th:text="${command.getExplanation()}">Clone and download a remote repository to your local machine.</p>-->
+<!--                    </div>-->
+<!--                    <div class="block__code-button">-->
+<!--                        <button class="block__code-copy">-->
+<!--                            <span class="block__code-copy-img"></span>-->
+<!--                        </button>-->
+<!--                    </div>-->
+<!--                </div>-->
+                <!--                        end of test-->
+
                 <div th:each="command : ${theme.getValue()}" class="block__code">
                     <div class="block__code-text">
                         <p class="block__code-command" th:text="${command.getName()}"></p>
